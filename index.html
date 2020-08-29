@@ -41,6 +41,8 @@
 
     section {
       height: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
       position: relative;
       width: 100%;
     }
@@ -49,6 +51,7 @@
       color: #fbec5d;
       font-family: 'Open Sans', sans-serif;
       font-size: 130px;
+      height: 635px;
       letter-spacing: 0.1em;
       line-height: 1.5;
       margin: 0 auto 0;
@@ -91,13 +94,18 @@
     }
 
     @media screen and (min-width: 500px) {
-      section {
-        margin-top: 10vh;
+      section, p, #heart {
+        padding-top: 10vh;
+      }
+
+      h1 {
+        height: calc(20vh + 650px);
       }
     }
 
     @media screen and (max-width: 369px) {
       h1 {
+        height: 600px;
         transform: scale(0.9);
         transform-origin: top left;
       }
@@ -123,6 +131,12 @@
       p#four {
         top: 420px;
       }
+
+      p#five {
+        font-size: 18px;
+        top: 575px;
+      }
+
     }
   </style>
 </head>
