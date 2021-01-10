@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background-color: #f2f3f4;
+  background-image: url('natural-paper.png');
+  background-position: center;
+}
+
+section#hero {
+  height: 110vh;
+}
+
+section {
+  height: 90vh;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+h2, p {
+  font-family: 'Josefin Slab', serif;
+}
+
+h1, h3 {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  color: #fbec5d;
+  font-size: 80px;
+  font-weight: 800;
+  height: 635px;
+  line-height: 2;
+  margin: 0 auto 0;
+  max-width: 400px;
+  padding-top: 32px;
+  text-align: center;
+}
+
+p.hero {
+  color: #292727;
+  font-size: 48px;
+  margin: 0;
+  position: absolute;
+}
+
+p#one {
+  left: 5%;
+  top: 3%;
+}
+
+p#two {
+  left: 50%;
+  top: 26%;
+}
+
+p#three {
+  left: 5%;
+  top: 56%;
+}
+
+p#four {
+  bottom: calc(10% + 50px);
+  display: block;
+  font-size: 24px;
+  left: 50%;
+  transform: translate(-50%);
+  width: auto;
+}
+
+#heart {
+  left: calc(50% + -150px);
+  position: absolute;
+  top: 145px;
+  transform: rotate(-10deg);
+  width: 70px;
+}
+
+#heart * {
+  fill: #eb4c42;
+  stroke: #eb4c42;
+}
+
+#downArrow {
+  bottom: calc(10% + 5px);
+  color: #292727;
+  left: calc(50% - 20px);
+  position: absolute;
+  width: 35px;
+}
+
+.deets-container {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.card, .text {
+  height: 500px;
+  position: absolute;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+}
+
+#card-one {
+  background-color: #5D60FB;
+  transform: rotate(-5deg);
+}
+
+#card-two {
+  background-color: #F4AD43;
+  transform: rotate(2deg);
+}
+
+.text {
+  color: #fff;
+  padding: 32px;
+}
+
+#text-two {
+  text-align: right;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+}
+
+#sun {
+  position: absolute;
+  right: 50px;
+  top: 150px;
+  width: 60px;
+}
+
+#sun * {
+  fill: #fff;
+  stroke: #fff;
+}
+
+#fire {
+  position: absolute;
+  left: 50px;
+  top: 60px;
+  width: 60px;
+}
+
+#fire * {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.polaroid {
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+  background: #fff;
+  border-radius: 2px;
+  height: 260px;
+  padding: 10px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.polaroid .mask {
+  border-radius: 2px;
+  box-shadow: inset 0px 1px 5px rgba(0,0,0,0.2);
+  height: 180px;
+  overflow: hidden;
+  width: 180px;
+}
+
+.polaroid .mask img {
+  height: 110%;
+  position: relative;
+  width: auto;
+  z-index: -1;
+}
+
+#polaroid-one {
+  right: 5px;
+  top: 270px;
+  transform: rotate(3deg);
+}
+
+#polaroid-two {
+  left: 10px;
+  top: 300px;
+  transform: rotate(-1deg);
+}
+
+#polaroid-three {
+  right: 0px;
+  top: 300px;
+  transform: rotate(2deg);
+}
+
+#polaroid-four {
+  left: 0px;
+  top: 280px;
+  transform: rotate(-3deg);
+}
+
+#polaroid-four img {
+  height: 100%;
+}

@@ -3,158 +3,77 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Save the date</title>
+  <title>RSVP</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400,800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet" />
   <meta name="theme-color" content="#292727">
-
-  <style>
-
-    #heart {
-      left: calc(50% + -150px);
-      position: absolute;
-      top: 145px;
-      transform: rotate(-10deg);
-      width: 70px;
-    }
-
-    #heart * {
-      fill: #eb4c42;
-      stroke: #eb4c42;
-    }
-
-    html, body {
-      height: 100%;
-      position: fixed;
-      width: 100%;
-    }
-
-    body {
-      background-color: #f2f3f4;
-      background-image: url('natural-paper.png');
-      background-position: center;
-    }
-
-    section {
-      height: 100%;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      position: relative;
-      width: 100%;
-    }
-
-    h1 {
-      color: #fbec5d;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 130px;
-      height: 635px;
-      letter-spacing: 0.1em;
-      line-height: 1.5;
-      margin: 0 auto 0;
-      max-width: 400px;
-      padding-top: 32px;
-      text-align: center;
-    }
-
-    p {
-      color: #292727;
-      font-family: 'Josefin Slab', serif;
-      font-size: 48px;
-      left: 50%;
-      margin: 0;
-      position: absolute;
-      width: 100%;
-    }
-
-    p#one {
-      top: 32px;
-      transform: translateX(-170px);
-    }
-
-    p#two {
-      top: 144px;
-    }
-
-    p#three {
-      top: 316px;
-      transform: translateX(-170px);
-    }
-
-    p#four {
-      top: 444px;
-    }
-
-    p#five {
-      font-size: 22px;
-      top: 620px;
-    }
-
-    @media screen and (min-width: 500px) {
-      section, p, #heart {
-        padding-top: 10vh;
-      }
-
-      h1 {
-        height: calc(20vh + 650px);
-      }
-    }
-
-    @media screen and (max-width: 369px) {
-      h1 {
-        height: 600px;
-        transform: scale(0.9);
-        transform-origin: top left;
-      }
-
-      p {
-        font-size: 42px;
-      }
-
-      p#one {
-        top: 32px;
-        transform: translateX(-140px);
-      }
-
-      p#two {
-        top: 144px;
-      }
-
-      p#three {
-        top: 305px;
-        transform: translateX(-140px);
-      }
-
-      p#four {
-        top: 420px;
-      }
-
-      p#five {
-        font-size: 18px;
-        top: 575px;
-      }
-
-    }
-  </style>
 </head>
 
 <body>
-  <section>
-    <h1>SAVE THE DATE</h1>
+  <section id="hero">
+    <h1>IT'S GONNA BE FUN</h1>
     <div id="heart"></div>
-    <p id="one">Nadine<br>& Marc</p>
-    <p id="two">27–30<br>August<br>2021</p>
-    <p id="three">La Garrotxa<br>Catalunya</p>
-    <p id="four">More<br>details<br>soon</p>
-    <p id="five">(it's gonna be fun)</p>
+    <p class="hero" id="one">Nadine<br>& Marc</p>
+    <p class="hero" id="two">27–30<br>August<br>2021</p>
+    <p class="hero" id="three">La Garrotxa<br>Catalunya</p>
+    <p class="hero" id="four">remember fun?</p>
+    <div id="downArrow"></div>
+  </section>
+  <section>
+    <div class="deets-container">
+      <div class="card" id="card-one"></div>
+      <div class="text">
+        <h3>FRIDAY DAY</h3>
+        <h2>Banys Vells, Banyoles</h2>
+        <p>Say hello to old pals</p>
+        <p>Have a swim</p>
+        <p>Dry off in the sun with a beer</p>
+      </div>
+      <div id="sun"></div>
+    </div>
+    <div class="polaroid" id="polaroid-two">
+      <div class="mask">
+        <img loading="lazy" src="/images/118973401_360095585006274_3190829645256759651_n.jpg"/>
+      </div>
+    </div>
+    <div class="polaroid" id="polaroid-one">
+      <div class="mask">
+        <img loading="lazy" src="/images/30829788_238319973382950_3468586992357343232_n.jpg"/>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="deets-container">
+      <div class="card" id="card-two"></div>
+      <div class="text" id="text-two">
+        <h3>FRIDAY EVENING</h3>
+        <h2>Mas Can Batlle</h2>
+        <p>Settle in</p>
+        <p>Make new friends by the barbie</p>
+        <p>Relax and chat long into the evening</p>
+      </div>
+      <div id="fire"></div>
+    </div>
+    <div class="polaroid" id="polaroid-three">
+      <div class="mask">
+        <img loading="lazy" src="/images/Can-Batlle.jpg"/>
+      </div>
+    </div>
+    <div class="polaroid" id="polaroid-four">
+      <div class="mask">
+        <img loading="lazy" src="images/sony-67-of-77-2000x1333.jpg"/>
+      </div>
+    </div>
   </section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js" integrity="sha512-35O/v2b9y+gtxy3HK+G3Ah60g1hGfrxv67nL6CJ/T56easDKE2TAukzxW+/WOLqyGE7cBg0FR2KhiTJYs+FKrw==" crossorigin="anonymous"></script>
   <script>
-    lottie.setSpeed(0.8)
 
+    // HEART ICON
     var heartContainer = document.querySelector('#heart');
     var heart = lottie.loadAnimation({
       container: heartContainer,
@@ -168,6 +87,39 @@
 
     window.setTimeout(function() { heart.play() }, animationDelay);
     window.setTimeout(function() { heart.pause() }, animationDelay + 500);
+
+    // DOWN ARROW ICON
+    var downArrowContainer = document.querySelector('#downArrow');
+    var downArrow = lottie.loadAnimation({
+      container: downArrowContainer,
+      renderer: 'svg',
+      path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/down-arrow/down-arrow.json'
+    });
+
+    downArrow.setSpeed(0.8);
+
+    // SUN ICON
+    var sunContainer = document.querySelector('#sun');
+    var sun = lottie.loadAnimation({
+      container: sunContainer,
+      renderer: 'svg',
+      path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/sun-weather/sun-weather.json'
+    });
+
+    sun.setSpeed(0.4);
+
+    // FIRE ICON
+    var fireContainer = document.querySelector('#fire');
+    var fire = lottie.loadAnimation({
+      container: fireContainer,
+      renderer: 'svg',
+      path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/fire/fire.json'
+    });
+
+    fire.setSpeed(0.1);
+
+
+
   </script>
 </body>
 
