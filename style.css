@@ -14,11 +14,19 @@ body {
 }
 
 section#hero {
-  height: 110vh;
+  height: 90vh;
+}
+
+@media screen and (min-width: 400px) {
+  section#hero {
+    height: 100vh;
+  }
 }
 
 section {
   height: 90vh;
+  max-width: 400px;
+  margin: 0 auto;
   position: relative;
   width: 100%;
   z-index: 0;
@@ -38,7 +46,7 @@ h1 {
   font-size: 80px;
   font-weight: 800;
   height: 635px;
-  line-height: 2;
+  line-height: 1.8;
   margin: 0 auto 0;
   max-width: 400px;
   padding-top: 32px;
@@ -54,17 +62,17 @@ p.hero {
 
 p#one {
   left: 5%;
-  top: 3%;
+  top: 30px;
 }
 
 p#two {
   left: 50%;
-  top: 26%;
+  top: 175px;
 }
 
 p#three {
   left: 5%;
-  top: 56%;
+  top: 370px;
 }
 
 p#four {
@@ -122,6 +130,11 @@ p#four {
 #card-two {
   background-color: #F4AD43;
   transform: rotate(2deg);
+}
+
+#card-three {
+  background-color: #9DC10B;
+  transform: rotate(-3deg);
 }
 
 .text {
