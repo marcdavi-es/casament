@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
@@ -14,8 +22,13 @@ body {
 }
 
 section#hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 90vh;
 }
 
@@ -80,11 +93,22 @@ p#three {
 }
 
 .down-arrow-container {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 16px 0;
 }
 
@@ -100,7 +124,9 @@ p#three {
   left: calc(50% + -150px);
   position: absolute;
   top: 145px;
-  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
   width: 70px;
 }
 
@@ -128,37 +154,50 @@ p#three {
 }
 
 .card {
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+          box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
 }
 
 #card-one {
   background-color: #5D60FB;
-  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
 }
 
 #card-two {
   background-color: #F4AD43;
-  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+          transform: rotate(2deg);
 }
 
 #card-three {
   background-color: #9DC10B;
-  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+          transform: rotate(-3deg);
 }
 
 #card-four {
   background-color: #25251f;
-  transform: rotate(6deg);
+  -webkit-transform: rotate(6deg);
+      -ms-transform: rotate(6deg);
+          transform: rotate(6deg);
 }
 
 #card-five {
   background-color: #4166f5;
-  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+          transform: rotate(-2deg);
 }
 
 #card-six {
   background-color: #EA602A;
-  transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+      -ms-transform: rotate(4deg);
+          transform: rotate(4deg);
 }
 
 .text {
@@ -228,7 +267,9 @@ p {
   position: absolute;
   left: 80px;
   top: 140px;
-  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
+          transform: rotate(20deg);
   width: 60px;
 }
 
@@ -241,7 +282,9 @@ p {
   position: absolute;
   left: 35px;
   top: 155px;
-  transform: rotate(-14deg);
+  -webkit-transform: rotate(-14deg);
+      -ms-transform: rotate(-14deg);
+          transform: rotate(-14deg);
   width: 40px;
 }
 
@@ -263,7 +306,8 @@ p {
 }
 
 .polaroid {
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+          box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
   background: #fff;
   border-radius: 2px;
   height: 260px;
@@ -275,7 +319,8 @@ p {
 
 .polaroid .mask {
   border-radius: 2px;
-  box-shadow: inset 0px 1px 5px rgba(0,0,0,0.2);
+  -webkit-box-shadow: inset 0px 1px 5px rgba(0,0,0,0.2);
+          box-shadow: inset 0px 1px 5px rgba(0,0,0,0.2);
   height: 180px;
   overflow: hidden;
   width: 180px;
@@ -291,25 +336,33 @@ p {
 #polaroid-one {
   right: 5px;
   top: 270px;
-  transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+          transform: rotate(3deg);
 }
 
 #polaroid-two {
   left: 10px;
   top: 300px;
-  transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+      -ms-transform: rotate(-1deg);
+          transform: rotate(-1deg);
 }
 
 #polaroid-three {
   right: 0px;
   top: 300px;
-  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+          transform: rotate(2deg);
 }
 
 #polaroid-four {
   left: 0px;
   top: 280px;
-  transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+          transform: rotate(-3deg);
 }
 
 #polaroid-four img {
@@ -319,13 +372,17 @@ p {
 #polaroid-five {
   right: -4px;
   top: 300px;
-  transform: rotate(2.2deg);
+  -webkit-transform: rotate(2.2deg);
+      -ms-transform: rotate(2.2deg);
+          transform: rotate(2.2deg);
 }
 
 #polaroid-six {
   left: 0px;
   top: 280px;
-  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+          transform: rotate(-2deg);
 }
 
 #rona {
@@ -355,7 +412,9 @@ p {
 
 #downArrowTwo {
   margin: 0 auto;
-  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+          transform: translateY(30px);
   width: 40px;
 }
 
@@ -366,15 +425,22 @@ p {
 
 #rsvp {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
 #cta {
   background: #fbec5d;
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+          box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
   color: #111;
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
@@ -392,7 +458,9 @@ p {
 
 #arrow-one {
   width: 140px;
-  transform: translate(-160px, -210px) rotate(-20deg);
+  -webkit-transform: translate(-160px, -210px) rotate(-20deg);
+      -ms-transform: translate(-160px, -210px) rotate(-20deg);
+          transform: translate(-160px, -210px) rotate(-20deg);
 }
 
 #arrow-one * {
@@ -402,7 +470,9 @@ p {
 
 #arrow-two {
   width: 120px;
-  transform: translate(20px, -180px) rotate(25deg);
+  -webkit-transform: translate(20px, -180px) rotate(25deg);
+      -ms-transform: translate(20px, -180px) rotate(25deg);
+          transform: translate(20px, -180px) rotate(25deg);
 }
 
 #arrow-two * {
@@ -412,7 +482,9 @@ p {
 
 #arrow-three {
   width: 160px;
-  transform: translate(110px, -90px) rotate(85deg);
+  -webkit-transform: translate(110px, -90px) rotate(85deg);
+      -ms-transform: translate(110px, -90px) rotate(85deg);
+          transform: translate(110px, -90px) rotate(85deg);
 }
 
 #arrow-three * {
@@ -422,7 +494,9 @@ p {
 
 #arrow-four {
   width: 100px;
-  transform: translate(0px, 70px) rotate(175deg);
+  -webkit-transform: translate(0px, 70px) rotate(175deg);
+      -ms-transform: translate(0px, 70px) rotate(175deg);
+          transform: translate(0px, 70px) rotate(175deg);
 }
 
 #arrow-four * {
@@ -432,7 +506,9 @@ p {
 
 #arrow-five {
   width: 130px;
-  transform: translate(-120px, 60px) rotate(195deg);
+  -webkit-transform: translate(-120px, 60px) rotate(195deg);
+      -ms-transform: translate(-120px, 60px) rotate(195deg);
+          transform: translate(-120px, 60px) rotate(195deg);
 }
 
 #arrow-five * {
@@ -442,7 +518,9 @@ p {
 
 #arrow-six {
   width: 110px;
-  transform: translate(-235px, -80px) rotate(275deg);
+  -webkit-transform: translate(-235px, -80px) rotate(275deg);
+      -ms-transform: translate(-235px, -80px) rotate(275deg);
+          transform: translate(-235px, -80px) rotate(275deg);
 }
 
 #arrow-six * {
