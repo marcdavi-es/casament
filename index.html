@@ -182,12 +182,16 @@
     <div class="arrer" id="arrow-four"></div>
     <div class="arrer" id="arrow-five"></div>
     <div class="arrer" id="arrow-six"></div>
-    <a href="https://videoask.com">
+    <a id="rsvp-link" href="">
       <div id="cta">RSVP</div>
     </a>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js" integrity="sha512-35O/v2b9y+gtxy3HK+G3Ah60g1hGfrxv67nL6CJ/T56easDKE2TAukzxW+/WOLqyGE7cBg0FR2KhiTJYs+FKrw==" crossorigin="anonymous"></script>
   <script>
+
+    var who = location.search.split('=')[1];
+    var rsvpLink = document.querySelector('#rsvp-link');
+    rsvpLink.href = 'https://www.videoask.com/f3sp3w9yv#who=' +  who;
 
     // HEART ICON
     var heartContainer = document.querySelector('#heart');

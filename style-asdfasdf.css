@@ -211,7 +211,8 @@ p#three {
 }
 
 #text-two,
-#text-four {
+#text-four,
+#text-six {
   text-align: right;
 }
 
@@ -295,7 +296,7 @@ p {
 
 #pint {
   position: absolute;
-  right: 50px;
+  left: 50px;
   top: 120px;
   width: 60px;
 }
