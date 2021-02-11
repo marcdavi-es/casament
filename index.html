@@ -192,7 +192,7 @@
     var who = location.search.split('=')[1];
 
     var whoContainer = document.querySelector('#who-container');
-    whoContainer.innerText = decodeURIComponent(who).split('&').join(' & ');
+    whoContainer.innerText = decodeURIComponent(who).split('&').join(' & ') || '';
 
     var rsvpLink = document.querySelector('#rsvp-link');
     rsvpLink.href = 'https://www.videoask.com/f3sp3w9yv#who=' +  who;
