@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet">
-  <link href="/style-asdf.css" rel="stylesheet" />
+  <link href="/style-asdfasdf.css" rel="stylesheet" />
   <meta name="theme-color" content="#292727">
 </head>
 
@@ -129,8 +129,7 @@
         <p>Recover with brunch</p>
         <p>Come wild swimming</p>
       </div>
-      <div id="diamond"></div>
-      <div id="diamondTwo"></div>
+      <div id="flower"></div>
     </div>
     <div class="polaroid" id="polaroid-five">
       <div class="mask">
@@ -182,6 +181,7 @@
     <div class="arrer" id="arrow-four"></div>
     <div class="arrer" id="arrow-five"></div>
     <div class="arrer" id="arrow-six"></div>
+    <div id="who-container"></div>
     <a id="rsvp-link" href="">
       <div id="cta">RSVP</div>
     </a>
@@ -190,6 +190,10 @@
   <script>
 
     var who = location.search.split('=')[1];
+
+    var whoContainer = document.querySelector('#who-container');
+    whoContainer.innerText = decodeURIComponent(who).split('&').join(' & ');
+
     var rsvpLink = document.querySelector('#rsvp-link');
     rsvpLink.href = 'https://www.videoask.com/f3sp3w9yv#who=' +  who;
 
@@ -265,6 +269,16 @@
     });
 
     diamondTwo.setSpeed(0.4);
+
+    // FLOWER ICON
+    var flowerContainer = document.querySelector('#flower');
+    var flower = lottie.loadAnimation({
+      container: flowerContainer,
+      renderer: 'svg',
+      path: 'https://maxst.icons8.com/vue-static/landings/animated-icons/icons/flower/flower.json'
+    });
+
+    flower.setSpeed(0.6);
 
     // PINT ICON
     var pintContainer = document.querySelector('#pint');
